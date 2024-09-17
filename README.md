@@ -1,61 +1,43 @@
 # Sign-up-Application
-# Project Overview
-This project is a simple console-based C++ application designed for managing records of individuals. Users can add new records with details like name and age, and fetch these records using a unique ID assigned at the time of creation. The application is aimed at demonstrating fundamental concepts of classes, arrays, and basic I/O operations in C++.
 
-# Features
-Add Record:
-Allows users to add a person's name and age, with the system automatically assigning a unique ID.
+# User Record Management System
 
-Fetch Record:
-Retrieves the details (name and age) of a person using their unique ID.
+This C++ application manages user records with functionalities to add and fetch user details. The program uses a simple array to store user records, each containing a name, age, and a unique ID. The user interacts with the program through a console-based menu.
 
-User-Friendly Interface:
-Simple console menu for easy navigation between adding and fetching records.
+## Features
+- **Add Record:** Allows users to add a new record with a name and age. Each record is assigned a unique ID.
+- **Fetch Record:** Retrieves and displays a user record based on the ID.
+- **Quit:** Exits the program.
 
-Capacity:
-The system can store up to 100 records.
+## Requirements
+- C++ Compiler (g++)
 
-Error Handling: I
-ncludes checks for invalid IDs and prevents exceeding the record limit.
+#### 🗒️ 🗒️ 🗒️ 🗒️Example:
 
-# System Requirements
-C++ compiler (such as g++)
+```txt
+Please select an option:
+1: Add Record
+2: Fetch Record
+3: Quit
 
-Terminal or command line interface
+Enter Option:
+1
+Add User. Please enter your name and age
+Name: Alice
+Age: 30
+User record added successfully
 
-Setup Instructions
+Please select an option:
+1: Add Record
+2: Fetch Record
+3: Quit
 
-Clone or Download the source files.
+Enter Option:
+2
+Fetch User. Please enter user ID
+User ID: 0
+User name: Alice
+User age: 30
 
-Compile the Code:
 
-Use a C++ compiler (like g++) to compile the source file.
-
-Run the Application:
-Execute the compiled binary in your terminal.
-# How to Use
-Add Record:
-
-Select the option to add a new record.
-
-Provide a name and age for the new person.
-
-The system will save the details and return a unique ID.
-
-Fetch Record:
-Select the option to retrieve a record by ID.
-Enter the ID when prompted to view the associated name and age.
-
-Exit:
-Select the quit option to exit the application.
-# Example Workflow
-Start the application.
-
-Add a person's record (name and age).
-
-Fetch the record by ID to view the person's details.
-
-Repeat as needed or quit the program.
-# Limitations
-Maximum of 100 records can be stored.
-Input for name and age is minimal, with no advanced validation.
+```
